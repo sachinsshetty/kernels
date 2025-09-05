@@ -1,0 +1,43 @@
+site_name: kernels
+repo_url: https://github.com/sachinsshetty/kernels
+theme:
+  name: material
+  features:
+    - content.action.edit
+    - content.code.copy
+    - content.tabs.link
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - toc.follow
+    - content.code.copy
+    - content.tabs
+    - content.action
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
+  - attr_list
+  - md_in_html
+site_dir: site
+plugins:
+  - search
+exclude_docs: |
+  *.py
+  node_modules/
+  *.git
+  venv
+use_directory_urls: false
+nav:
+  - home: index.md
+  - cuda :
+      - readme : cuda/index.md
+      - cuda driver : cuda/cuda_12_9-setup.md
+      - cuda docker : cuda/cuda_docker.md
