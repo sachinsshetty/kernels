@@ -32,6 +32,9 @@ int main(void)
    y[i] = 2.0f;
  }
  
+ // Prefetch the x and y arrays to the GPU
+cudaMemPrefetchAsync(x, N*sizeof(float), 0, 0);
+cudaMemPrefetchAsync(y, N*sizeof(float), 0, 0);
  // Run kernel on 1M elements on the GPU
 add<<<1, 256>>>(N, x, y); 
  // Wait for GPU to finish before accessing on host
