@@ -12,3 +12,13 @@ Trimul - AlphaFold Competition
 - https://github.com/chaidiscovery/chai-lab
 
 
+https://github.com/Ligo-Biosciences/AlphaFold3
+
+https://github.com/aqlaboratory/openfold
+
+
+https://github.com/google-deepmind/alphafold3
+
+- AlphaFold 3 - PAper  : https://www.nature.com/articles/s41586-024-07487-w
+
+- https://github.com/google-deepmind/mujoco_warp 
