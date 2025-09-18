@@ -11,5 +11,12 @@ for value in range(1, max_value,2):
 
 print(len(temp_array))
 
-for value in temp_array:
+original_array = temp_array
+
+for value in original_array:
+    
+    for temp_value in range(value, max_value,2):
+
+        temp_array.append(value)
+
     print(value)
