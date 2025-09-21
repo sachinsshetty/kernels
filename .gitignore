@@ -5,7 +5,12 @@ output.wav
 src/ollama
 pyautogenvenv/
 venv/
+*.sqlite 
+*.nsys-rep
+*.o
 venv_2
+data/
+*.pth
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
